@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <title>상호작용을 위한 제이쿼리</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    
+    <script>
+        $(function() {
+            $(".btn1").click(function() {
+                $(".btn1").parent().next().css({
+                    "color": "salmon"
+                });
+            });
+
+            $(".btn2").on({
+                "mouseover focus": function() {
+                    $(".btn2").parent().next().css({
+                        "color":"skyblue"
+                    });
+                },
+                "mouseout blur" : function() {
+                    $(".btn2").parent().next().css({
+                        "color":"white"
+                    })
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+<!-- 이벤트 : 방문자의 모든 움직임에 따라 코드를  -->
+    <p>
+        <button class="btn1">버튼1</button>
+    </p>
+    <p>내용1</p>
+    <p>
+        <button class="btn2">버튼2</button>
+    </p>
+    <p>내용2</p>
+    
+
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>상호작용을 위한 제이쿼리</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <script>
+        $(function(){
+            // parent() : 부모요소
+            // next() : 다음요소
+            // $("h1").parent().css("color", "salmon"); 
+            // $("#food_2").children().css("color", "salmon");
+            // $("h1").next().css("color", "salmon");
+            // $("h1").nextAll().css("color", "salmon");
+            // $("#food_2").prev().css("color", "salmon");
+            // $("#food_2").prevAll().css("color", "salmon");
+
+           
+        })
+    </script>
+
+</head>
+
+<body>
+     <!-- 1. 선택자 : HTML 요소를 선택하여 설정.
+            CSS는 정적인 스타일 적용인 반면,
+            jQuery는 동적으로 스타일 적용 -->
+
+    <!-- body 컨텐츠 -->
+    <div id="wrap">
+        <div id="inner_wrap">
+    <h1 id="title">선호하는 음식</h1>
+    <section id = "food_1">
+        <h2>한식</h2>
+        <ul>
+            <li>김치</li>
+            <li>불고기</li>
+        </ul>
+    </section>
+    <section id="food_2">
+        <h2>양식</h2>
+        <ul>
+            <li>피자</li>
+            <li>파스타</li>
+        </ul>
+    </section>
+    </div>
+    </div>
+</body>
+
+</html>

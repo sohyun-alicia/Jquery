@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <title>상호작용을 위한 제이쿼리</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    
+    <!-- 마우스 좌표 확인 -->
+    <script>
+        $(function() {
+            $("#userid, #userpass").on("focus", function() {
+                $(this).css({
+                    "background-color": "salmon"
+                });
+            });
+
+            $("#userid, #userpass").on("blur", function() {
+                $(this).css({
+                    "background-color": "skyblue"
+                });
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <form action="#">
+        <p>
+            <label for="userid">ID</label>
+            <input type="text" name="userid" id="userid">
+        </p>
+        <p>
+            <label for="userpass">PW</label>
+            <input type="text" name="userpass" id="userpass">
+        </p>
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>상호작용을 위한 제이쿼리</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script>
+        $(function() {
+        //     $("#menu li:first").css("color", "salmon");
+        //     $("#menu li:last").css("color", "skyblue");
+            // $("#menu li:even").css("color", "salmon");
+            // $("#menu li:odd").css("color", "skyblue");
+
+            // $("#menu li").eq(2).css("color", "salmon");
+            // $("#menu li:lt(2)").css("color", "skyblue");
+            $("#menu li:gt(2)").css("color", "salmon");
+
+        });
+    </script>
+  
+</head>
+
+<body>
+
+    <h1>선호하는 음식</h1>
+    <h2>한식</h2>
+    <ul id="menu">
+        <li>짜장면</li>
+        <li>불고기</li>
+        <li>순두부</li>
+        <li>비빔밥</li>
+    </ul>
+
+
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <title>상호작용을 위한 제이쿼리</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    
+    <!-- 마우스 좌표 확인 -->
+    <script>
+        $(function() {
+            $(document).on("mousemove", function(e) {
+                $(".posX").text(e.pageX);
+                $(".posY").text(e.pageY);
+            })
+        });
+    </script>
+</head>
+
+<body>
+
+    <p> X:<span class="posX">0</span></p>
+    <p> Y:<span class="posY">0</span></p>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <title>상호작용을 위한 제이쿼리</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    
+    <!-- 이벤트 강제 발생 -->
+    <script>
+        $(function() {
+            $(".btn1").on("click", function() {
+                $(".txt1").css({
+                    "background-color": "salmon"
+                });
+            });
+            $(".btn2").on("click", function() {
+                $(".txt2").css({
+                    "background-color": "skyblue"
+                });
+            });
+            $(".btn3").on("dbclick", function() {
+                $(".txt3").css({
+                    "background-color": "lemon"
+                });
+            });
+
+
+        });
+    </script>
+</head>
+
+<body>
+<!-- 이벤트 : 방문자의 모든 움직임에 따라 코드를  -->
+    <p>
+        <button class="btn1">버튼1</button>
+    </p>
+    <p>내용1</p>
+    <p>
+        <button class="btn2">버튼2</button>
+    </p>
+    <p>내용2</p>
+    <p>
+        <button class="btn2">버튼3</button>
+    </p>
+    <p>내용3</p>
+    
+
+</body>
+
+</html>
